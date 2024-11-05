@@ -1,0 +1,319 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: Arial, sans-serif;
+    flex-direction: column ;
+    justify-content: center;  
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #f4f4f9;  
+    overflow-x: hidden;
+
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuR, #menuC,#menuCon, #menuT{
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.CalertButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.success {
+    background-color: #4CAF50; 
+}
+
+.error {
+    background-color: #f44336; 
+}
+
+
+/*puro----------------------------------------------------*/
+
+.mainContainer {
+
+    display: grid;
+    grid-template-rows: 330px 70px;
+    width: 600px;
+    height: 430px;
+    border: 1px solid rgb(114, 105, 105);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;  
+}
+
+.gridContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 430px 100px;
+    width: 600px;
+    height: 430px;
+    border: 1px solid rgb(114, 105, 105);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    gap: 20px;  
+    box-sizing: border-box;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.subGridContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+    box-sizing: border-box;
+
+}
+
+.subGridContainer h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subGridContainer label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;  
+}
+
+.subGridContainer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.info {
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.animacion{
+    animation: expand 1s forwards;
+}
+
+@keyframes expand {
+    to {
+        width: 1200px;
+        height: 530px;
+    }
+}
+
+
+
+
+.mainContainerprueb {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px 100px;
+    gap: 15px;  
+}
+
+.containerSalir {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerSalir button {
+    margin-right: 35px;
+}
+
+.buttonContainer {
+    width: 210px;
+    height: 59px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px #999;
+    transition-duration: 0.4s;
+    background-color: #8BC34A; 
+    color: white;  
+}
+
+.buttonContainer:hover {
+    background-color: #7CB342;  
+    color: white;
+    box-shadow: 0 6px #666;   
+}
+
+.buttonContainer:active {
+    background-color: #689F38; 
+    box-shadow: 0 2px #666;   
+    transform: translateY(4px); 
+}
+
+.img {
+    height: 50px;
+}
+
+.transformed {
+    transform: rotate(180deg);
+}
+
+
+/*Sub container*/
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 30px;
+    border: 1px solid rgb(114, 105, 105);
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+    margin: 50px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.subContainer:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+
+.subMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+#subLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.labelTitle {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold; 
+    margin: 0 !important; 
+}
+
+.resultValue {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+#result1, #result2 {
+    min-height: 10px; 
+}
+
+
+.inputField {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 16px;
+    width: 100%;  
+    transition: all 0.3s ease; 
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: #8BC34A;  
+    box-shadow: 0 0 8px rgba(139, 195, 74, 0.5);  
+}
+
+.inputField:hover {
+    border-color: #8BC34A; 
+}
+
+.subButton {
+    display: block;
+    text-align: center;
+    background-color: #8BC34A;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 4px #999;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.subButton:hover {
+    background-color: #7CB342;  
+}
+
+.subButton:active {
+    background-color: #689F38; 
+    box-shadow: 0 2px #666;   
+    transform: translateY(4px); 
+}
+
+
+.exitButton {
+    margin-top: 1px;
+    height: 40px;
+    width: 600px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exitButton:hover {
+    background-color: #d32f2f; 
+}
+
+.exitButton:active {
+    background-color: #b71c1c; 
+}

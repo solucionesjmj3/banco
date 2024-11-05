@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/basic.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="../img/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="navbar-center">
+            <a href="#">Inicio</a>
+            <a href="#">Productos y Servicios</a>
+            <a href="#">Educación Financiera</a>
+        </div>
+        <div class="navbar-right">
+            <button class="button"><a href="./index.html">Entrar</a></button>
+        </div>
+    </header>
+
+
+    <section id="menuP" class="mainContainer">
+        <div class="mainContainerprueb">
+            <label for="" class="centrar">
+                <img src="../img/arrow-small-right.png" class="img" alt="">
+                <button id="retirar" class="buttonContainer ">Retirar</button>
+            </label>
+            <label for="" class="centrar">
+                <button id="consignar" class="buttonContainer">Consignar</button>
+                <img src="../img/arrow-small-right.png" class="img transformed" alt="">
+            </label>
+            <label for="" class="centrar">
+                <img src="../img/arrow-small-right.png" class="img" alt="">
+                <button id="transferir" class="buttonContainer">Transferir Dinero</button>
+            </label>
+            <label for="" class="centrar">
+                <button id="consulta" class="buttonContainer">Consultar Saldo</button>
+                <img src="../img/arrow-small-right.png" class="img transformed" alt="">
+                
+            </label>
+        </div>
+        
+        <div class="containerSalir">
+            <button class="buttonContainer"><a href="./login.html" >Salir</a></button>
+        </div>
+    </section>
+
+    <section id="menuR" class="subContainer">
+        <div class="subMainContainer">
+            <label class="subLabel" for="">
+                <h2 class="subP" >Valor a retirar</h2>
+                <input type="number" id="valorRetirado">
+            </label>
+            <button id="botonRetirado" class="subButton">Retirar</button>
+
+            <section id="subLabel" for="">
+                <p class="labelTitle">Valor retirado</p>
+                <p id="result1" class="resultValue"></p>
+                <p class="labelTitle">Saldo actual</p>
+                <p id="result2" class="resultValue"></p>
+            </section>
+            <button id="alertButton" class="hidden CalertButton">Aviso</button>
+            <button id="salirR" class="subButton">Salir</button>
+        </div>
+    </section>
+
+    <section id="menuC" class="subContainer">
+        <div class="subMainContainer">
+            <label class="subLabel" for="">
+                <h2 class="subP" >Valor a Consignar</h2>
+                <input type="number" id="valorConsignado">
+            </label>
+            <button id="botonConsignado" class="subButton">Consignar</button>
+
+            <section id="subLabel" for="">
+                <p class="labelTitle">Valor Consignado</p>
+                <p id="result1C" class="resultValue"></p>
+                <p class="labelTitle">Saldo actual</p>
+                <p id="result2C" class="resultValue"></p>
+            </section>
+            <button id="alertButtonC" class="hidden CalertButton">Aviso</button>
+            <button id="salirC" class="subButton">Salir</button>
+        </div>
+    </section>
+
+    <section id="menuT" class="subContainer">
+        <div class="subMainContainer">
+            <label class="subLabel" for="">
+                <h2 class="subP" >Valor a Transferir</h2>
+                <input type="number" id="valorTransferido">
+                <h2 class="subP" >Numero de cuenta</h2>
+                <input type="number" id="cuentaTransferida" >
+            </label>
+            <button id="botonTransferir" class="subButton">Transferir</button>
+
+            <section id="subLabel" for="">
+                <p class="labelTitle">Valor Transferido</p>
+                <p id="result1T" class="resultValue"></p>
+                <p class="labelTitle">Saldo actual</p>
+                <p id="result2T" class="resultValue"></p>
+            </section>
+            <button id="alertButtonT" class="hidden CalertButton">Aviso</button>
+            <button id="salirT" class="subButton">Salir</button>
+        </div>
+    </section>
+
+    <section id="menuCon" class="gridContainer">
+        <div class="column">
+            <div class="subGridContainer">
+                <h1>Datos de la cuenta 1</h1>
+                <label for="">
+                    <p>Nombre:</p>
+                    <p id="name1" class="info"></p>
+                </label>
+                <label for="">
+                    <p>Apellido:</p>
+                    <p id="ape1" class="info"></p>
+                </label>
+                <label for="">
+                    <p>Numero de Identidad:</p>
+                    <p id="iden1" class="info"></p>
+                </label>
+                <label for="">
+                    <p>Numero de cuenta:</p>
+                    <p id="cuent1" class="info"></p>
+                </label>
+                <label for="">
+                    <p>Saldo:</p>
+                    <p id="sald1" class="info"></p>
+                </label>
+            </div>
+            <div class="subGridContainer">
+                <h1>Datos de la cuenta 2</h1>
+                <label for="">
+                    <p>Nombre:</p>
+                    <p id="name2" class="info"></p>
+                </label>
+                <label for="">
+                    <p>Apellido:</p>
+                    <p id="ape2" class="info"></p>
+                </label>
+                <label for="">
+                    <p>Numero de Identidad:</p>
+                    <p id="iden2" class="info"></p>
+                </label>
+                <label for="">
+                    <p>Numero de cuenta:</p>
+                    <p id="cuent2"class="info"></p>
+                </label>
+                <label for="">
+                    <p>Saldo:</p>
+                    <p id="sald2" class="info"></p>
+                </label>
+            </div>
+        </div>
+        
+        <button id="salirCon" class="exitButton">Salir</button>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Gobierno Corporativo</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Banca Personal</a></li>
+                    <li><a href="#">Banca Empresarial</a></li>
+                    <li><a href="#">Tarjetas de Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column-div">
+                <h1>Banco MSI</h1>
+            </div>
+            <div class="footer-column footer-column-large">
+                <h4>Contáctenos</h4>
+                <ul>
+                    <li><a href="#">Línea de Atención</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Atención al Cliente</a></li>
+                </ul>   
+            </div>
+            <div class=" footer-column social-icons footer-column-div">
+                <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/github.png" alt="GitHub"></a>
+                <a href="#"><img src="../img/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="../img/telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../controllers/Main.js"></script>
+</body>
+</html>

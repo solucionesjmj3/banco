@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="../img/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="navbar-center">
+            <a href="#">Inicio</a>
+            <a href="#">Productos y Servicios</a>
+            <a href="#">Educación Financiera</a>
+        </div>
+        <div class="navbar-right">
+            <button class="button"><a href="./index.html">Entrar</a></button>
+        </div>
+    </header>
+
+    <section class="mainContainer">
+        <div class="mainContainerprueb">
+            <label for="">
+                <p>Nombre</p>
+                <input id="rName" type="text">
+            </label>
+            <label for="">
+                <p>Apellido</p>
+                <input id="rApe" type="text">
+            </label>
+            <label for="">
+                <p>Direccion</p>
+                <input id="rDir" type="text">
+            </label>
+            <label for="">
+                <p>Numero de identidad</p>
+                <input id="rNum" type="text">
+            </label>
+                <button><a id="crear" href="#">Crear Usuario</a></button>
+            <div class="opciones">
+                <a href="./login.html">¿Desea iniciar sesion?</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Gobierno Corporativo</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Banca Personal</a></li>
+                    <li><a href="#">Banca Empresarial</a></li>
+                    <li><a href="#">Tarjetas de Crédito</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column-div">
+                <h1>Banco MSI</h1>
+            </div>
+            <div class="footer-column footer-column-large">
+                <h4>Contáctenos</h4>
+                <ul>
+                    <li><a href="#">Línea de Atención</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Atención al Cliente</a></li>
+                </ul>   
+            </div>
+            <div class=" footer-column social-icons footer-column-div">
+                <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/github.png" alt="GitHub"></a>
+                <a href="#"><img src="../img/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="../img/telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script type="module" src="../controllers/CrearUsu.js"></script>
+</body>
+</html>

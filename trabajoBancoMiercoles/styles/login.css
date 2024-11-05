@@ -1,0 +1,107 @@
+/* login.css */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+
+}
+
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid rgb(114, 105, 105);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;  
+    margin: 50px auto;
+    
+}
+
+.mainContainerprueb {
+    display: grid;
+    gap: 20px; 
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 16px;
+    width: 95%;  
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #8BC34A;  
+    box-shadow: 0 0 8px rgba(139, 195, 74, 0.5);  
+}
+
+button {
+    display: block;
+    background-color: transparent;
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+button a {
+    display: block;
+    text-align: center;
+    background-color: #8BC34A; 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px #999;
+    transition-duration: 0.4s;
+    width: 90%;  
+}
+
+button a:hover {
+    background-color: #7CB342;  
+}
+
+button a:active {
+    background-color: #689F38; 
+    box-shadow: 0 2px #666;   
+    transform: translateY(4px);
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px;
+}
+
+.opciones a {
+    font-weight: bold;  
+    color: #333; 
+    text-decoration: none;
+}
+
+.opciones a:hover {
+    color: #8BC34A;  
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;  
+}
+
+
+/*Footer*/
